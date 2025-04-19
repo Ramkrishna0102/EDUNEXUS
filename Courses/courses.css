@@ -1,0 +1,85 @@
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Image */
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color:  #718096;
+  font-size: 1.125rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+/* Page Headings */
+h1, .section-heading {
+  text-align: center;
+  color: #2d3748;
+  margin: 3rem 0 2rem;
+  font-size: 2rem;
+}
+
+/* Grid Container */
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Course Card Styling */
+.courses-container a {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1rem;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-container a:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  background-color: #4e46e595;
+  transition: ease-in;
+}
+
+/* Course Title Text */
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a5568;
+}

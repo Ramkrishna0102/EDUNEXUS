@@ -1,0 +1,120 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ This is the fix -->
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+<body>
+
+  <header class="header">
+    <div class="left">
+      <img src="/images/StudySyn.svg" alt="Course Logo" />
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#">Checkout</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="navbar">
+        <li class="nav-item"><a href="Queries-form/index2.html">Queries</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="course-details">
+    <h2>Course Selected</h2>
+    <p><strong>Course:</strong> <span id="courseName">Loading...</span></p>
+    <p><strong>Instructor:</strong> <span id="instructor">Loading...</span></p>
+    <p><strong>Price:</strong> ₹<span id="coursePrice">0</span></p>
+    <p><strong>Access:</strong> Lifetime Access</p>
+  </div>
+  
+
+  <div class="container">
+    <h2>Payment Method</h2>
+
+    <!-- Card Payment Form -->
+    <div class="first-row">
+      <div class="owner">
+        <h3>Owner</h3>
+        <div class="input-field">
+          <input type="text" placeholder="Card Owner Name">
+        </div>
+      </div>
+      <div class="cvv">
+        <h3>CVV</h3>
+        <div class="input-field">
+          <input type="password" placeholder="123">
+        </div>
+      </div>
+    </div>
+
+    <div class="second-row">
+      <div class="card-number">
+        <h3>Card Number</h3>
+        <div class="input-field">
+          <input type="text" placeholder="XXXX XXXX XXXX XXXX">
+        </div>
+      </div>
+    </div>
+
+    <div class="third-row">
+      <h3>Card Valid</h3>
+      <div class="selection">
+        <div class="date">
+          <select name="months" title="Select monts">
+            <option>MM</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <select name="years" title="Select Year">
+            <option>YY</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+          </select>
+        </div>
+        <div class="cards">
+          <img src="/images/mc.png" alt="Mastercard" />
+          <img src="/images/vi.png" alt="Visa" />
+          <img src="/images/pp.png" alt="UPI" />
+        </div>
+      </div>
+    </div>
+
+    <button class="button">Confirm Payment</button>
+
+    <div class="or-divider">OR</div>
+
+    <!-- Razorpay -->
+    <form>
+      <script src="https://checkout.razorpay.com/v1/payment-button.js"
+        data-payment_button_id="pl_Iy0VL2Ssz01jzJ"
+        async></script>
+    </form>
+
+    <button class="button">PAY</button >
+
+    <marquee class="marquee" title="mrq">
+      **** Welcome to StudySyn! We offer a secure payment gateway! ****
+    </marquee>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
