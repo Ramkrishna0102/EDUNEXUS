@@ -1,15 +1,18 @@
+/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  
-  body {
+}
+
+/* Body Background */
+body {
     background-color: #f5f5f5;
-  }
-  
-  .header {
+}
+
+/* Header Styles */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,175 +20,206 @@
     padding: 10px 30px;
     color: white;
     flex-wrap: wrap;
-  }
-  
-  .header img {
+    border-bottom: 3px solid #3a33c4;
+}
+
+.header img {
     height: 40px;
-  }
-  
-  .navbar {
+}
+
+/* Navbar Styles */
+.navbar {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-  }
-  
-  .navbar li {
+}
+
+.navbar li {
     margin: 0 10px;
-  }
-  
-  .navbar a {
-    color:  #eeedf5f4;
+}
+
+.navbar a {
+    color: #eeedf5f4;
     text-decoration: none;
     font-weight: 500;
-  }
-  
-  .course-details {
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Course Details */
+.course-details {
     background-color: #fff;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  .course-details h2 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h2 {
     margin-bottom: 15px;
     color: #333;
-  }
-  
-  .course-details p {
+}
+
+.course-details p {
     margin: 5px 0;
     font-size: 16px;
-  }
-  
-  .container {
-    background: white;
+}
+
+/* Payment Form Container */
+.container {
+    background: #ffffff;
     width: 90%;
     max-width: 600px;
     margin: 30px auto;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container h2 {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container h2 {
     margin-bottom: 20px;
     color: #444;
-  }
-  
-  .input-field input {
+    text-align: center;
+}
+
+/* Input Fields */
+.input-field input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #bbb;
     border-radius: 6px;
     margin-top: 5px;
-  }
-  
-  .first-row,
-  .second-row,
-  .third-row {
+    font-size: 14px;
+}
+
+/* Card Form Sections */
+.first-row, .second-row, .third-row {
     margin-bottom: 20px;
-  }
-  
-  .selection {
+}
+
+/* Date Selection */
+.selection {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  
-  .selection .date select {
-    padding: 8px 12px;
+    gap: 10px;
+}
+
+.selection .date select {
+    padding: 10px;
     margin-right: 10px;
     margin-top: 10px;
     min-width: 100px;
-  }
-  
-  .cards img {
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+/* Card Logos */
+.cards img {
     height: 30px;
     margin-left: 10px;
     margin-top: 10px;
-  }
-  
-  .button {
+    border-radius: 5px;
+}
+
+/* Payment Button */
+.button {
     background-color: #e91e63;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 15px;
     width: 100%;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  .or-divider {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c2185b;
+}
+
+/* Divider */
+.or-divider {
     text-align: center;
     margin: 20px 0;
     color: #999;
     font-weight: bold;
-  }
-  
-  .marquee {
+    font-size: 14px;
+}
+
+/* Marquee */
+.marquee {
     margin-top: 30px;
     color: #e91e63;
     font-weight: bold;
     font-size: 18px;
-  }
-  
-  /* -------------------------------- */
-  /* 🌐 Responsive Breakpoints */
-  /* -------------------------------- */
-  
-  @media (max-width: 768px) {
+    text-align: center;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
     .header {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-  
+
     .navbar {
-      justify-content: center;
-      flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
     }
-  
+
     .selection {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
+
     .cards {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-  
+
     .cards img {
-      margin: 5px 10px 0 0;
+        margin: 5px 10px 0 0;
     }
-  }
-  
-  @media (max-width: 480px) {
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
     .header {
-      padding: 10px 15px;
+        padding: 10px 15px;
     }
-  
+
     .navbar li {
-      margin: 5px 10px;
+        margin: 5px 10px;
     }
-  
+
     .container,
     .course-details {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .button {
-      font-size: 14px;
+        font-size: 14px;
+        padding: 12px;
     }
-  
+
     .marquee {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
+}
+
   
